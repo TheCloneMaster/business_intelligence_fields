@@ -16,25 +16,11 @@
         <xpath expr="//field[@name='invoice_line_ids']/tree/field[@name='currency_id']" position="after">
             <field name="price_subtotal_signed" groups="base.group_no_one" string="Amount in Comp. Cur."/>
             <field name="company_currency_id" invisible="1"/>
-<<<<<<< HEAD
-            <field name="amount_untaxed_company_currency"
-                widget="monetary"
-                options="{'currency_field': 'company_currency_id'}"/>
-            <field name="amount_total_company_currency"
-                widget="monetary"
-                options="{'currency_field': 'company_currency_id'}"/>
-        </field>
-        <!--xpath expr="//field[@name='invoice_line']/tree/field[@name='price_subtotal']" position="after">
-            <field name="price_unit_company_currency" groups="base.group_no_one"/>
-            <field name="price_subtotal_company_currency" groups="base.group_no_one"/>
-        </xpath-->
-=======
         </xpath>
         <xpath expr="//page/group/group/field[@name='name']" position="after">
             <field name="amount_untaxed_signed"/>
             <field name="amount_total_company_signed"/>
         </xpath>
->>>>>>> 567ba294fe0ede08a2d6305505da9209fc5de7ff
     </field>
 </record>
 
